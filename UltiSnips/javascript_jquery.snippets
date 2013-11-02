@@ -1,0 +1,7 @@
+snippet seq "deferred sequence"
+var ${0:sequence} = function(){
+	return $.Deferred(function( ${1:dfd} ){
+		return $1.then( ${2}( $1 ) );
+	}).promise();
+};
+endsnippet

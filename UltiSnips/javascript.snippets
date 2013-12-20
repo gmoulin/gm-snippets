@@ -1,3 +1,7 @@
+#################################################
+# GLOBAL										#
+#################################################
+
 snippet cl "console log"
 console.log($0);
 endsnippet
@@ -21,3 +25,47 @@ endsnippet
 snippet cte "console timeEnd"
 console.timeEnd('$0');
 endsnippet
+
+snippet us "use strict"
+'use strict';
+endsnippet
+
+#################################################
+# MOCHA											#
+#################################################
+snippet desc "describe"
+describe('$1', function(){
+	$0
+});
+endsnippet
+
+snippet before "before"
+before(function(){
+	$0
+});
+endsnippet
+
+snippet beforeE "beforeEach"
+beforeEach(function(){
+	$0
+});
+endsnippet
+
+snippet afterE "afterEach"
+afterEach(function(){
+	$0
+});
+endsnippet
+
+snippet it "it"
+it('$1', function(){
+	$0
+});
+endsnippet
+
+snippet inject "inject"
+inject(function( $1 ){
+	$0
+});
+endsnippet
+
